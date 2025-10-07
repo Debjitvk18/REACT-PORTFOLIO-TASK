@@ -22,7 +22,7 @@ const Project = () => {
             </p>
           </div>
           <button className="mt-6 bg-sky-500 hover:bg-sky-600 text-white py-2 px-4 rounded-md self-center">
-            Live Link
+            <a href="https://github.com/dashboard">Live Link</a>
           </button>
         </div>
 
@@ -38,7 +38,7 @@ const Project = () => {
             </p>
           </div>
           <button className="mt-6 bg-sky-500 hover:bg-sky-600 text-white py-2 px-4 rounded-md self-center">
-            Live Link
+            <a href="https://github.com/dashboard">Live Link</a>
           </button>
         </div>
 

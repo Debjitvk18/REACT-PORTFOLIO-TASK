@@ -16,7 +16,12 @@ const Contact = () => {
             If you'd like to get in touch, feel free to reach out via email:
           </p>
           <button className="mt-6 bg-sky-500 hover:bg-sky-600 text-white py-2 px-4 rounded-md self-center">
-            Email Me
+            <a
+              href="mailto:Debjitvk18@gmail.com"
+              className="  hover:bg-sky-600 text-white rounded-md self-center inline-block text-center"
+            >
+              Email Me
+            </a>
           </button>
         </div>
       </div>

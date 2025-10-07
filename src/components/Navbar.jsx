@@ -22,27 +22,27 @@ const Home = () => {
   return (
     <div className="w-full bg-zinc-600 shadow-md fixed top-0 left-0 z-50">
       <div className="flex items-center justify-between px-4 sm:px-8 py-3 sm:py-4">
-        {/* Profile Image */}
-        <div className="h-14 w-14 sm:h-20 sm:w-20 bg-zinc-900 flex items-center justify-center rounded-full overflow-hidden p-1">
-          <img
-            src={profileImg}
-            alt="profile"
-            className="h-full w-full rounded-full object-cover"
-          />
-        </div>
+        {/* Profile Image + Name */}
+        <div className="flex items-center gap-2 sm:gap-4">
+          <div className="h-14 w-14 sm:h-20 sm:w-20 bg-zinc-900 flex items-center justify-center rounded-full overflow-hidden p-1">
+            <img
+              src={profileImg}
+              alt="profile"
+              className="h-full w-full rounded-full object-cover"
+            />
+          </div>
 
-        <div>
           <BlurText
             text="Debjit Ghosh"
             delay={150}
             animateBy="words"
             direction="top"
             onAnimationComplete={handleAnimationComplete}
-            className="text-xl sm:text-2xl text-white"
+            className="text-lg sm:text-xl md:text-2xl text-white"
           />
         </div>
 
-        {/* Navbar Links (desktop) */}
+        {/* Desktop Navigation Links */}
         <div className="hidden md:flex justify-center gap-6 text-white font-medium text-sm sm:text-lg">
           {navLinks.map((link) => (
             <a
@@ -64,7 +64,6 @@ const Home = () => {
             onClick={() => setMenuOpen(!menuOpen)}
             className="text-white focus:outline-none"
           >
-            {/* Hamburger icon */}
             <div className="space-y-1">
               <span className="block w-6 h-0.5 bg-white"></span>
               <span className="block w-6 h-0.5 bg-white"></span>
@@ -82,7 +81,7 @@ const Home = () => {
               key={link.name}
               href={link.href}
               className="text-white text-lg hover:text-amber-300 transition duration-300"
-              onClick={() => setMenuOpen(false)} // close menu on click
+              onClick={() => setMenuOpen(false)}
             >
               {link.name}
             </a>
