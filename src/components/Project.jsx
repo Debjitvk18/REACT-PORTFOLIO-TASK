@@ -1,65 +1,32 @@
 import React from "react";
+import CardSection from "./CardSection";
 
-const Project = () => {
-  return (
-    <div className="flex flex-col items-center justify-center py-16 px-4 sm:px-6 lg:px-20 text-center">
-      {/* Heading */}
-      <h2 className="text-3xl sm:text-4xl font-medium underline decoration-2 decoration-blue-400 underline-offset-8 mb-6">
-        Projects
-      </h2>
+const Projects = () => {
+  const projectData = [
+    {
+      title: "Kissan Helper",
+      description:
+        "ML and IoT-based system for crop selection, disease prediction, soil analysis, and smart irrigation.",
+      link: "https://github.com/dashboard",
+      buttonText: "Live Link",
+    },
+    {
+      title: "Crowdfunding DApp",
+      description:
+        "Blockchain-based crowdfunding system using Ethereum and Web3.js.",
+      link: "https://github.com/dashboard",
+      buttonText: "Live Link",
+    },
+    {
+      title: "SoilNutrient Using ML",
+      description:
+        "Analyzed 18 soil features to predict suitable crops and suggested top 5 alternatives using ML models.",
+      link: "https://github.com/dashboard",
+      buttonText: "Live Link",
+    },
+  ];
 
-      <div className="flex flex-wrap justify-center gap-6 sm:gap-8 p-4 sm:p-8 bg-gray-50 rounded-md">
-        {/* Card 1 */}
-        <div className="bg-white shadow-md hover:shadow-lg rounded-xl w-full sm:w-80 p-4 sm:p-6 flex flex-col justify-between transition-shadow duration-300">
-          <div>
-            <h3 className="text-xl font-semibold text-gray-900 text-center mb-2">
-              Kissan Helper
-            </h3>
-            <p className="text-gray-600 text-center text-sm sm:text-base">
-              ML and IoT-based system for crop selection, disease prediction,
-              soil analysis, and smart irrigation. Integrated ML models with 10+
-              sensor inputs to enhance yield and accuracy.
-            </p>
-          </div>
-          <button className="mt-6 bg-sky-500 hover:bg-sky-600 text-white py-2 px-4 rounded-md self-center">
-            <a href="https://github.com/dashboard">Live Link</a>
-          </button>
-        </div>
-
-        {/* Card 2 */}
-        <div className="bg-gray-100 shadow-md hover:shadow-lg rounded-xl w-full sm:w-80 p-4 sm:p-6 flex flex-col justify-between transition-shadow duration-300">
-          <div>
-            <h3 className="text-xl font-semibold text-gray-900 text-center mb-2">
-              Crowdfunding DApp
-            </h3>
-            <p className="text-gray-600 text-center text-sm sm:text-base">
-              Blockchain-based crowdfunding system using Ethereum and Web3.js.
-              Designed to ensure transparency and authenticity in donations.
-            </p>
-          </div>
-          <button className="mt-6 bg-sky-500 hover:bg-sky-600 text-white py-2 px-4 rounded-md self-center">
-            <a href="https://github.com/dashboard">Live Link</a>
-          </button>
-        </div>
-
-        {/* Card 3 */}
-        <div className="bg-gray-200 shadow-md hover:shadow-lg rounded-xl w-full sm:w-80 p-4 sm:p-6 flex flex-col justify-between transition-shadow duration-300">
-          <div>
-            <h3 className="text-xl font-semibold text-gray-900 text-center mb-2">
-              SoilNutrient Using ML
-            </h3>
-            <p className="text-gray-600 text-center text-sm sm:text-base">
-              Analyzed 18 soil features to predict suitable crops and suggested
-              top 5 alternatives using regression and classification models.
-            </p>
-          </div>
-          <button className="mt-6 bg-sky-500 hover:bg-sky-600 text-white py-2 px-4 rounded-md self-center">
-            <a href="https://github.com/dashboard">Live Link</a>
-          </button>
-        </div>
-      </div>
-    </div>
-  );
+  return <CardSection title="Projects" cards={projectData} />;
 };
 
-export default Project;
+export default Projects;
