@@ -28,22 +28,23 @@ const Home = () => {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10">
+      <div className="relative z-10 pt-24 md:pt-28 lg:pt-32">
+        {/* Navbar */}
         <Navbar />
 
         {/* About Section */}
         <motion.section
           id="about"
-          className="flex flex-col items-center justify-center py-16 px-4 sm:px-6 lg:px-20 text-center"
+          className="scroll-mt-28 flex flex-col items-center justify-center py-16 px-4 sm:px-6 lg:px-20 text-center"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl sm:text-4xl font-medium underline decoration-2 decoration-blue-400 underline-offset-8 mb- mt-15">
+          <h2 className="text-3xl sm:text-4xl font-medium underline decoration-2 decoration-blue-400 underline-offset-8 mb-6">
             About Me
           </h2>
-          <p className="max-w-2xl text-base sm:text-lg leading-relaxed ">
+          <p className="max-w-2xl text-base sm:text-lg leading-relaxed">
             Hello! I'm a passionate Computer Science student with experience in
             web development, IoT, and machine learning. I enjoy creating
             efficient and elegant solutions that make a difference.
@@ -53,7 +54,7 @@ const Home = () => {
         {/* Projects Section */}
         <motion.section
           id="projects"
-          className="py-12 px-4 sm:px-6 lg:px-20"
+          className="scroll-mt-28 py-12 px-4 sm:px-6 lg:px-20"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -65,7 +66,7 @@ const Home = () => {
         {/* Education Section */}
         <motion.section
           id="education"
-          className="py-12 px-4 sm:px-6 lg:px-20"
+          className="scroll-mt-28 py-12 px-4 sm:px-6 lg:px-20"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -77,7 +78,7 @@ const Home = () => {
         {/* Skills Section */}
         <motion.section
           id="skills"
-          className="py-12 px-4 sm:px-6 lg:px-20"
+          className="scroll-mt-28 py-12 px-4 sm:px-6 lg:px-20"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -89,7 +90,7 @@ const Home = () => {
         {/* Awards Section */}
         <motion.section
           id="awards"
-          className="py-12 px-4 sm:px-6 lg:px-20"
+          className="scroll-mt-28 py-12 px-4 sm:px-6 lg:px-20"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -101,7 +102,7 @@ const Home = () => {
         {/* Hobbies Section */}
         <motion.section
           id="hobbies"
-          className="py-12 px-4 sm:px-6 lg:px-20"
+          className="scroll-mt-28 py-12 px-4 sm:px-6 lg:px-20"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -113,7 +114,7 @@ const Home = () => {
         {/* Contact Section */}
         <motion.section
           id="contact"
-          className="py-12 px-4 sm:px-6 lg:px-20"
+          className="scroll-mt-28 py-12 px-4 sm:px-6 lg:px-20"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -122,6 +123,7 @@ const Home = () => {
           <Contact />
         </motion.section>
 
+        {/* Footer */}
         <Footer />
       </div>
     </div>

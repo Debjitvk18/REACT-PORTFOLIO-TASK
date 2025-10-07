@@ -17,7 +17,7 @@ const Contact = () => {
           </p>
           <button className="mt-6 bg-sky-500 hover:bg-sky-600 text-white py-2 px-4 rounded-md self-center">
             <a
-              href="mailto:Debjitvk18@gmail.com"
+              href="mailto:debjitvk18@gmail.com"
               className="  hover:bg-sky-600 text-white rounded-md self-center inline-block text-center"
             >
               Email Me

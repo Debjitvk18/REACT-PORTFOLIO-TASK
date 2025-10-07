@@ -20,7 +20,7 @@ const Home = () => {
   ];
 
   return (
-    <div className="w-full bg-zinc-600 shadow-md fixed top-0 left-0 z-50">
+    <div className="w-full bg-zinc-600  shadow-md fixed top-0 left-0 z-50">
       <div className="flex items-center justify-between px-4 sm:px-8 py-3 sm:py-4">
         {/* Profile Image + Name */}
         <div className="flex items-center gap-2 sm:gap-4">
