@@ -17,8 +17,8 @@ const Project = () => {
             </h3>
             <p className="text-gray-600 text-center text-sm sm:text-base">
               ML and IoT-based system for crop selection, disease prediction,
-              soil analysis, and smart irrigation. Integrated ML models with
-              10+ sensor inputs to enhance yield and accuracy.
+              soil analysis, and smart irrigation. Integrated ML models with 10+
+              sensor inputs to enhance yield and accuracy.
             </p>
           </div>
           <button className="mt-6 bg-sky-500 hover:bg-sky-600 text-white py-2 px-4 rounded-md self-center">
@@ -54,7 +54,7 @@ const Project = () => {
             </p>
           </div>
           <button className="mt-6 bg-sky-500 hover:bg-sky-600 text-white py-2 px-4 rounded-md self-center">
-            Live Link
+            <a href="https://github.com/dashboard">Live Link</a>
           </button>
         </div>
       </div>

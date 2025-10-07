@@ -31,7 +31,6 @@ const Home = () => {
           />
         </div>
 
-        {/* Name (hidden on very small screens, optional) */}
         <div>
           <BlurText
             text="Debjit Ghosh"
