@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import profileImg from "../assets/profile.jpg";
 import BlurText from "../design/BlutText";
 
-const Home = () => {
+const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleAnimationComplete = () => {
@@ -20,11 +20,12 @@ const Home = () => {
   ];
 
   return (
-    <div className="w-full bg-zinc-600  shadow-md fixed top-0 left-0 z-50">
+    <div className="w-full bg-zinc-600 shadow-md fixed top-0 left-0 z-50">
       <div className="flex items-center justify-between px-4 sm:px-8 py-3 sm:py-4">
+
         {/* Profile Image + Name */}
-        <div className="flex items-center gap-2 sm:gap-4">
-          <div className="h-14 w-14 sm:h-20 sm:w-20 bg-zinc-900 flex items-center justify-center rounded-full overflow-hidden p-1">
+        <div className="flex items-center gap-3 sm:gap-4 flex-shrink-0">
+          <div className="h-16 w-16 sm:h-20 sm:w-20 bg-zinc-900 flex items-center justify-center rounded-full overflow-hidden p-1">
             <img
               src={profileImg}
               alt="profile"
@@ -38,7 +39,7 @@ const Home = () => {
             animateBy="words"
             direction="top"
             onAnimationComplete={handleAnimationComplete}
-            className="text-lg sm:text-xl md:text-2xl text-white"
+            className="text-lg sm:text-xl md:text-2xl text-white whitespace-nowrap"
           />
         </div>
 
@@ -48,7 +49,7 @@ const Home = () => {
             <a
               key={link.name}
               href={link.href}
-              className="relative group transition duration-300"
+              className="relative group transition duration-300 scroll-smooth"
             >
               <span className="group-hover:text-amber-300 transition duration-300">
                 {link.name}
@@ -92,4 +93,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Navbar;

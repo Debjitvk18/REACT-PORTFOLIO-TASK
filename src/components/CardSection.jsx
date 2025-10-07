@@ -1,10 +1,10 @@
-// components/CardSection.jsx
+
 import React from "react";
 
 const CardSection = ({ title, cards }) => {
   return (
     <div className="flex flex-col items-center justify-center py-16 px-4 sm:px-6 lg:px-20 text-center">
-      {/* Section Title */}
+  
       <h2 className="text-3xl sm:text-4xl font-medium underline decoration-2 decoration-blue-400 underline-offset-8 mb-6">
         {title}
       </h2>
